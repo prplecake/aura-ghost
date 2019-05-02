@@ -1,0 +1,297 @@
+/* Table of Contents
+/* --------------------------------------------------------------------------------
+
+This is a development CSS file which is built to a minified production
+stylesheet in asset/built/screen.css
+
+ 1. Global Styles
+ 2. Layout
+ 3. Special Templates
+ 4. Site Header
+ 5. Site Navigation
+ 6. Post Feed
+ 7. Single Post
+ 8. Author Template
+ 9. Error Template
+10. Site Footer
+
+*/
+
+/* 1. Global
+ -------------------------------------------------------------------------------- */
+
+html, body {
+/*    overflow-x: hidden;
+*/    font-family: sans-serif;
+    font-size: 12pt;
+}
+
+article p {
+    line-height: 1.25;
+    font-size: 12pt;
+}
+
+body {
+    background: #fff;
+    padding-bottom: 2rem;
+    max-width: 100%;
+}
+
+pre {
+    border: 1px #ddd solid;
+    border-radius: 0;
+    overflow-x: auto;
+    background: transparent;
+    line-height: 1.2;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #efefef;
+}
+
+pre code {
+    white-space: pre;
+    word-wrap: normal;
+}
+
+code {
+    font-family: monospace;
+    color: #000;
+    font-size: 10pt;
+
+    overflow-x: scroll;
+}
+
+
+a {
+    color: blue;
+    text-decoration: underline;
+}
+
+ .container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+ }
+
+ .container .content {
+    grid-column-start: 1;
+ }
+
+.post-class .post-title,
+.container .site-title {
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+ .container .site-title a {
+    color: black;
+    text-decoration: none;
+ }
+
+ .post-content {
+    margin: 6px 0;
+ }
+
+ .container .sidebar {
+    grid-column-start: 2;
+    padding-left: 1rem;
+ }
+
+.post-stub .post-tags {
+    font-size: 10pt;
+}
+
+.hero-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.hero-greeting,
+.hero-bio {
+    font-size: 12pt;
+}
+
+.post-meta {
+    color: #999;
+}
+
+.post-meta .date {
+}
+
+.post-footer .post-tags {
+    font-size: 10pt;
+}
+
+.post-meta a {
+    color: #999;
+}
+
+img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+ h1 {
+    padding-top: 0px;
+    font-size: 16pt;
+ }
+
+.post-stub h2 {
+    font-size: 12pt;
+}
+
+.post-stub .date {
+    color: #999;
+    display: inline-block;
+    min-width: 6rem;
+}
+
+.navigation {
+    text-align: center;
+    position: relative;
+    margin: 1em;
+    overflow: hidden;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -1px;
+}
+
+.navigation li {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: .25em 0;
+    padding: 0 1em;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li[role=menuitem] {
+    display: inline;
+}
+
+@media (min-width: 576px) {
+  .visible-xs {
+    display: none;
+  }
+}
+
+.post-content p {
+    line-height: 1.25;
+    font-size: 12pt;
+}
+
+.kg-width-full img,
+.kg-width-wide img{
+    // required by gcsan to properly validate the theme
+}
+
+.external-links .context {
+    position: absolute;
+    top: -0.9rem;
+    left: 0;
+    font-size: 0.8rem;
+    color: black;
+}
+
+.external-links > p {
+    position: relative;
+}
+
+.external-links > p:not(:last-child) {
+    padding-bottom: 0.5rem;
+}
+
+.site-footer {
+    font-size: 10pt;
+    padding-top: 0.5rem;
+}
+
+.sidebar,
+.sidebar a {
+    color: #444;
+}
+
+.sidebar hr {
+    border-top: #aaa;
+    width: 75%;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.btn {
+  display: inline-block;
+  padding: .1rem .75rem;
+  background: #e9ecef;
+  border: #343a40 1px solid;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  margin: 12px 0 0 0;
+  transition: color .15s ease-in-out,
+    background-color .15s ease-in-out,
+    border-color .15s ease-in-out,
+    box-shadow .15s ease-in-out;
+}
+.btn:hover {
+    text-decoration: none;
+    background: #f8f9fa;
+    color: #000;
+  }
+
+.btn.btn-primary {
+    border: #001933 1px solid;
+    background: #0069d9;
+    color: #fff;
+}
+.btn .btn-primary :hover {
+      background: #0062cc;
+      color: #fff;
+}
+
+
+
+.icon {
+    display: inline-block;
+    line-height: 0.75em;
+    width: 0.4em;
+    vertical-align: -0.2em;
+}
+
+.icon path {
+    fill: currentColor;
+}
+.sidebar .navigation a {
+    color: blue;
+}
+
+.kg-gallery-container,
+.kg-gallery-row,
+.kg-gallery-image {
+
+}

@@ -1,0 +1,19 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [0.1.0]
+
+### Added
+
+- Started project - 2019-05-01
+- Completed first HTML sprint
+
+    Got:
+    - default.hbs
+    - index.hbs
+    - post.hbs
+
+- Added LICENSE content
+- Fleshed out layout
+- 

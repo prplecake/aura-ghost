@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+<div class="content"><div class="media">
+
+    {{#foreach posts}}
+
+    <article class="post-stub">
+        <h2>
+            <time class="date" datetime="{{date format="YYYY-MM-DD"}}">
+                {{date format="YYYY-MM-DD"}}
+            </time>
+            <a href="{{url}}">{{title}}</a>
+        </h2>
+        <p class="post-content">
+            {{excerpt characters="250"}}
+        </p>
+        <span class="post-tags">
+            {{#if tags}}
+                {{tags separator=" | "}}
+            {{/if}}
+        </span>
+    </article>
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</div></div>

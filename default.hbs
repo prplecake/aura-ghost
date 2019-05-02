@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{! Document Settings}}
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    {{! Page Meta}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="True" />
+
+    {{! Styles'n'Scripts}}
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+    {{! Ghost outputs important style and meta data with this tag: }}
+    {{ghost_head}}
+</head>
+
+<body class="{{body_class}}">
+    <div class="container">
+        {{^is "post, page"}}
+            <h1 class="site-title">{{@site.title}}</h1>
+        {{/is}}
+
+        {{! Main content ginserted at this tag: }}
+        {{{body}}}
+    
+        <div class="sidebar">
+
+            {{#get "authors" limit="1" order="created_at asc" as |user|}}
+                {{#user}}
+                    {{#if profile_image}}
+                    <p class="hero-avatar"><img src="{{profile_image}}" alt="{{name}}" class="avatar" /></p>
+                    <p class="hero-greeting">
+                        Hi there!
+                    </p>
+                    <p class="hero-bio">
+                        {{bio}}
+                    </p>
+                    {{/if}}
+                {{/user}}
+            {{/get}}
+
+            <div class="navigation">
+                {{navigation}}
+            </div>
+
+            {{> "external-links"}}
+
+            <hr />
+
+            <footer class="site-footer">
+                <div class="inner">
+                        The content for this site is <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>. The <a href="https://git.sr.ht/~mjorgensen/ghst">theme</a> for this site is <a href="https://git.sr.ht/~mjorgensen/ghst/tree/master/LICENSE">MIT</a>.
+                        Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a>   
+                </div>  
+            </footer>   
+        </div>  
+    
+        {{! Ghost output important scripts and data with this tag: }}
+        {{ghost_foot}}
+    </div>
+</body>
+</html>
