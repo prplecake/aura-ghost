@@ -2,23 +2,7 @@
 /* --------------------------------------------------------------------------------
 
 This is a development CSS file which is built to a minified production
-stylesheet in asset/built/screen.css
-
- 1. Global Styles
- 2. Layout
- 3. Special Templates
- 4. Site Header
- 5. Site Navigation
- 6. Post Feed
- 7. Single Post
- 8. Author Template
- 9. Error Template
-10. Site Footer
-
-*/
-
-/* 1. Global
- -------------------------------------------------------------------------------- */
+stylesheet in asset/built/screen.css */
 
 html, body {
 /*    overflow-x: hidden;
@@ -135,6 +119,10 @@ img {
     display: block;
 }
 
+img.avatar {
+    border-radius: 10%;
+}
+
  h1 {
     padding-top: 0px;
     font-size: 16pt;
@@ -191,6 +179,14 @@ li[role=menuitem] {
     display: none;
   }
 }
+blockquote {
+
+}
+blockquote p {
+    font-size: 11pt !important;
+}
+
+
 
 .post-content p {
     line-height: 1.25;
@@ -264,18 +260,6 @@ li[role=menuitem] {
     color: #000;
   }
 
-.btn.btn-primary {
-    border: #001933 1px solid;
-    background: #0069d9;
-    color: #fff;
-}
-.btn .btn-primary :hover {
-      background: #0062cc;
-      color: #fff;
-}
-
-
-
 .icon {
     display: inline-block;
     line-height: 0.75em;
@@ -291,13 +275,17 @@ li[role=menuitem] {
 }
 
 @media (max-width: 768px) {
- .container {
-  display:block
- }
- .container .sidebar {
-  padding-left:0
- }
+    .container {
+        display:block
+    }
+    .container .sidebar {
+        padding: 3rem 0 0 0;
+    }
+    .site-footer {
+        text-align: center;
+    }
 }
+
 @media (min-width: 576px) {
  .visible-xs {
   display:none
