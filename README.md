@@ -1,6 +1,7 @@
 # aura
 
-A very minimal theme for the [Ghost][ghost] publishing platform. Heavy inspiration comes from Drew DeVault's projects. 
+A very minimal theme for the [Ghost][ghost] publishing platform. Heavy
+inspiration comes from Drew DeVault's projects. 
 
 [ghost]: https://ghost.org
 
