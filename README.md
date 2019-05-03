@@ -9,7 +9,7 @@ inspiration comes from Drew DeVault's projects.
 
 [ghost]: https://ghost.org
 
-[screenshot-main]: ./screenshots/main.png
+[screenshot-main]: https://git.sr.ht/~mjorgensen/aura/tree/master/screenshots/main.png
 
 ## Resources
 
