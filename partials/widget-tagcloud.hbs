@@ -1,0 +1,14 @@
+{{! Widget to display a tag cloud }}
+<div class="tagcloud">
+    <ul class="tagcloud-list">
+    {{#get "tags" limit="all" include="count.posts" order="count.posts desc"}}
+        {{#if tags}}
+            {{#foreach tags}}
+                <li class="tagcloud-list-item">
+                    <a href="{{url}}">{{name}}</a>
+                </li>
+            {{/foreach}}
+        {{/if}}
+    {{/get}}
+    </ul>
+</div>

@@ -1,7 +1,7 @@
 # aura
 
 A very minimal theme for the [Ghost][ghost] publishing platform. Great
-inspiration comes from Drew DeVault's projects.
+inspiration comes from a brutalist  Drew DeVault's projects.
 
 **Live Demo: <https://jrgnsn.net>**
 
@@ -15,8 +15,11 @@ inspiration comes from Drew DeVault's projects.
 
 ## Features
 
-* **No JavaScript!** - this theme add no additional JavaScript to your
+* Minimal and responsive
+* **No JavaScript!** - this theme adds no additional JavaScript to
+your
 Ghost installation.
+* Tag Cloud
 
 
 [ghost]: https://ghost.org
