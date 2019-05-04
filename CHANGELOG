@@ -2,7 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0]
+## [1.0.1] - 2019-05-04
+
+### Changed
+
+- Organized stylesheet
+
+## [1.0.0] - 2019-05-04
 
 ### Added
 
@@ -16,4 +22,14 @@ All notable changes to this project will be documented in this file.
 
 - Added LICENSE content
 - Fleshed out layout
-- 
+- Widgets:
+
+    - Hero Avatar
+    - Author Bio
+    - Navigation
+    - External Links
+    - Recent Posts
+    - Tag Cloud
+
+[1.0.1]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.1
+[1.0.0]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.0
