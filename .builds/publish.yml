@@ -7,8 +7,13 @@ sources:
 tasks:
   - init: |
       sudo npm install -g gscan
-  - scan: |
+  - gscan: |
       which gscan
       gscan aura
-  # - zip: |
-  #     zip -r aura aura --exclude "*/.git*"
+  - check-branch: |
+      cd aura
+      if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then \        
+        complete-build; \ 
+      fi
+  - zip: |
+      zip -r aura aura --exclude "*/.git*"
