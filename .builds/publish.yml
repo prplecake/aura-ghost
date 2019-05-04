@@ -1,13 +1,13 @@
-image: debian/stable
+image: alpine/edge
 packages:
   - npm
   - zip
 sources:
   - https://git.sr.ht/~mjorgensen/aura
 tasks:
-  - init: |
-      npm install gscan
-  - gscan: |
-      gscan aura
-  - zip: |
-      zip -r aura aura --exclude "*/.git*"
+  - scan: |
+      cd aura
+      npm install
+      gscan .
+  # - zip: |
+  #     zip -r aura aura --exclude "*/.git*"
