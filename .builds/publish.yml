@@ -14,8 +14,7 @@ tasks:
       gscan aura
   - dist: |
       cd aura
-      pwd
-      LATEST_TAG=$(git describe --tags --abbrev=0)
+      LATEST_TAG=$(git describe --tags --abbrev=0) 2>/dev/null
       FILENAME=latest
       if [ "$(git rev-parse develop)" == "$(git rev-parse HEAD)" ]; then
         FILENAME=dev
