@@ -1,7 +1,6 @@
 image: alpine/edge
 packages:
   - npm
-  - gscan
   - zip
 sources:
   - https://git.sr.ht/~mjorgensen/aura
