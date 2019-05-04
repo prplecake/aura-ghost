@@ -7,8 +7,9 @@ inspiration comes from Drew DeVault's [blog][ddevault-blog].
 
 **Live Demo: <https://jrgnsn.net>**
 
-**Latest ZIP:** [aura-latest.zip]
-(https://files.splat.soy/dist/aura/aura-latest.zip)
+**Latest ZIP:** [aura-latest.zip][aura-latest]
+
+[aura-latest]: https://files.splat.soy/dist/aura/aura-latest.zip)
 
 **Resources:**
 
