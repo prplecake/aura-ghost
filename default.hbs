@@ -27,25 +27,13 @@
     
         <div class="sidebar">
 
-            {{#get "authors" limit="1" order="created_at asc" as |user|}}
-                {{#user}}
-                    {{#if profile_image}}
-                    <p class="hero-avatar"><img src="{{profile_image}}" alt="{{name}}" class="avatar" /></p>
-                    <p class="hero-greeting">
-                        Hi there!
-                    </p>
-                    <p class="hero-bio">
-                        {{bio}}
-                    </p>
-                    {{/if}}
-                {{/user}}
-            {{/get}}
+            {{> "widget-author-bio"}}
 
             <div class="navigation">
                 {{navigation}}
             </div>
 
-            {{> "external-links"}}
+            {{> "widget-external-links"}}
 
             <hr />
 
