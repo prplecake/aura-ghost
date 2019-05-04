@@ -33,9 +33,13 @@
                 {{navigation}}
             </div>
 
+            {{! Edit the following widgets in their respective .hbs file in partials/
+                More information can be found at 
+                <https://man.sr.ht:~mjorgensen/aura/widgets.md>
+                Comment out the following line to disable widget-external links. }}
             {{> "widget-external-links"}}
 
-            <hr />
+            {{> "widget-recent-posts"}}
 
             {{> "widget-tagcloud"}}
 

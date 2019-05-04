@@ -1,0 +1,20 @@
+{{^is "index"}}
+<hr />
+
+<h3>Recent Posts</h3>
+<div class="recent-posts">
+
+    {{#get "posts" limit="3" as |recent_posts|}}
+    {{#foreach recent_posts}}
+        <time class="recent-post-date" datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="YYYY-MM-DD"}}
+        </time>
+        <br />
+        <a class="recent-post-link" href="{{url}}">{{title}}</a>
+        <br />
+    {{/foreach}}
+    {{/get}}
+
+</div>
+
+{{/is}}
