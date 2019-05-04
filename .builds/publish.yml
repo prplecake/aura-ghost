@@ -1,0 +1,14 @@
+image: alpine/edge
+packages:
+  - npm
+  - gscan
+  - zip
+sources:
+  - https://git.sr.ht/~mjorgensen/aura
+tasks:
+  - setup: |
+      npm instal gscan -g
+  - gscan: |
+      gscan aura
+  - zip: |
+      zip -r aura aura --exclude "*/.git*"
