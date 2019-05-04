@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.3] - 2019-05-04
+
+### Changed
+
+- Debugging build manifest
+
 ## [1.0.2] - 2019-05-04
 
 ### Added
@@ -38,6 +44,7 @@ All notable changes to this project will be documented in this file.
     - Recent Posts
     - Tag Cloud
 
-[1.1.0]: https://git.sr.ht/~mjorgensen/aura/refs/1.1.0
+[1.0.3]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.3
+[1.0.2]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.2
 [1.0.1]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.1
 [1.0.0]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.0
