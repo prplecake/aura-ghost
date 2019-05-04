@@ -2,40 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.3] - 2019-05-04
-
-### Changed
-
-- Debugging build manifest
-
-## [1.0.2] - 2019-05-04
-
-### Added
-
-- build manifest
-    - .builds/publish.yml
-
-## [1.0.1] - 2019-05-04
-
-### Changed
-
-- Organized stylesheet
 
 ## [1.0.0] - 2019-05-04
 
 ### Added
 
 - Started project - 2019-05-01
-- Completed first HTML sprint
-
-    Got:
-    - default.hbs
-    - index.hbs
-    - post.hbs
-
-- Added LICENSE content
-- Fleshed out layout
-- Widgets:
+- added LICENSE content
+- fleshed out layout
+- widgets:
 
     - Hero Avatar
     - Author Bio
@@ -44,7 +19,9 @@ All notable changes to this project will be documented in this file.
     - Recent Posts
     - Tag Cloud
 
-[1.0.3]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.3
-[1.0.2]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.2
-[1.0.1]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.1
+- organized stylesheet
+
+- build manifest
+    - .builds/publish.yml
+
 [1.0.0]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.0
