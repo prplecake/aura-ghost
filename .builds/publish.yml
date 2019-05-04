@@ -15,5 +15,5 @@ tasks:
       if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then
         complete-build;
       fi
-  - zip: |
-      zip -r aura aura --exclude "*/.git*"
+  # - zip: |
+  #     zip -r aura aura --exclude "*/.git*"
