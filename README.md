@@ -1,5 +1,7 @@
 # aura
 
+[![builds.sr.ht status](https://builds.sr.ht/~mjorgensen/aura.svg)](https://builds.sr.ht/~mjorgensen/aura?)
+
 A very minimal theme for the [Ghost][ghost] publishing platform. Major
 inspiration comes from Drew DeVault's [blog][ddevault-blog].
 
