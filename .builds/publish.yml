@@ -19,7 +19,7 @@ tasks:
       FILENAME=latest
       if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then
         complete-build;
-      elif [ "$(git describe)" == "$LATEST_TAG"]; then
+      elif [ "$(git describe)" == "$LATEST_TAG" ]; then
         FILENAME=$LATEST_TAG
       fi
       cd ../
