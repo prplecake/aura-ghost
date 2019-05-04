@@ -1,4 +1,4 @@
-
+<div class="pagination-container">
     {{#if prev}}
         <div class="pull-left">
             <a class=" btn" href="{{page_url prev}}">
@@ -11,6 +11,11 @@
             </a>
         </div>
     {{/if}}
+
+    <div class="pull-center">
+        <p>Page {{page}} of {{pages}}</p>
+    </div>
+
     {{#if next}}
         <div class="pull-right">
             <a class="btn" href="{{page_url next}}">
@@ -23,3 +28,4 @@
             </a>
         </div>
     {{/if}}
+</div>

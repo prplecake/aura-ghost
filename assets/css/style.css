@@ -331,12 +331,28 @@ h1 {
 /* 5. Pagination Buttons
 /* ---------------------------------------------------------- */
 
+.pagination-container {
+  display: grid;
+  grid-template-areas:
+    'left center right';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
 .pull-left {
-    float: left;
+  margin-right: auto;
+}
+
+.pull-center {
+  text-align: center;
+}
+
+.pull-center > p {
+  font-size: 11pt;
 }
 
 .pull-right {
-    float: right;
+  margin-left: auto;
 }
 
 .btn {
