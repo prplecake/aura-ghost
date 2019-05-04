@@ -9,7 +9,7 @@ inspiration comes from Drew DeVault's [blog][ddevault-blog].
 
 **Latest ZIP:** [aura-latest.zip][aura-latest]
 
-[aura-latest]: https://files.splat.soy/dist/aura/aura-latest.zip)
+[aura-latest]: https://files.splat.soy/dist/aura/aura-latest.zip
 
 **Resources:**
 
