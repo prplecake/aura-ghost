@@ -32,6 +32,6 @@ blog][ddevault-blog]. His [site code][ddevault-code] is [MIT][mit-license].
 [todo]: https://todo.sr.ht/~mjorgensen/aura
 [announce-list]: https://lists.sr.ht/~mjorgensen/aura-announce
 [ddevault-blog]: https://drewdevault.com
-[ddevault-site]: https://git.sr.ht/~sircmpwn/drewdevault.com
+[ddevault-code]: https://git.sr.ht/~sircmpwn/drewdevault.com
 [mit-license]: https://opensource.org/licenses/MIT
 
