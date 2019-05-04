@@ -17,7 +17,9 @@ tasks:
       pwd
       LATEST_TAG=$(git describe --tags --abbrev=0)
       FILENAME=latest
-      if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then
+      if [ "$(git rev-parse develop)" == "$(git rev-parse HEAD)" ]; then
+        FILENAME=dev
+      elif [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then
         complete-build;
       elif [ "$(git describe)" == "$LATEST_TAG" ]; then
         FILENAME=$LATEST_TAG
