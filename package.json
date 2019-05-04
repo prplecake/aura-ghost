@@ -43,8 +43,5 @@
                 "width": 2000
             }
         }
-    },
-    "dependencies": {
-        "gscan": "^2.5.1"
     }
 }
