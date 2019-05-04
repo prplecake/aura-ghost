@@ -5,8 +5,8 @@ packages:
 sources:
   - https://git.sr.ht/~mjorgensen/aura
 tasks:
-  - setup: |
-      npm install gscan -g
+  - init: |
+      npm install gscan
   - gscan: |
       gscan aura
   - zip: |
