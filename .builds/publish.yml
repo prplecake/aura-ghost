@@ -12,8 +12,8 @@ tasks:
       gscan aura
   - check-branch: |
       cd aura
-      if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then \        
-        complete-build; \ 
+      if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then
+        complete-build;
       fi
   - zip: |
       zip -r aura aura --exclude "*/.git*"
