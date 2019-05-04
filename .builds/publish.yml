@@ -5,9 +5,10 @@ packages:
 sources:
   - https://git.sr.ht/~mjorgensen/aura
 tasks:
+  - init: |
+      sudo npm install -g gscan
   - scan: |
-      cd aura
-      npm install
-      gscan .
+      which gscan
+      gscan aura
   # - zip: |
   #     zip -r aura aura --exclude "*/.git*"
