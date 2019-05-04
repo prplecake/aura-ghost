@@ -13,9 +13,9 @@ tasks:
   - gscan: |
       gscan aura
   - dist: |
+      cd aura
       LATEST_TAG=$(git describe --tags --abbrev=0)
       FILENAME=latest
-      cd aura
       if [ "$(git rev-parse master)" != "$(git rev-parse HEAD)" ]; then
         complete-build;
       elif [ "$(git rev-parse master)" == "$(git rev-parse HEAD)" == "$(git rev-parse $LATEST_TAG)" ]; then
