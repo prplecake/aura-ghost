@@ -335,20 +335,24 @@ h1 {
   display: grid;
   grid-template-areas:
     'left center right';
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
   padding: 10px;
 }
 
 .pull-left {
   margin-right: auto;
+  grid-area: left;
 }
 
 .pull-center {
   text-align: center;
+  grid-area: center;
 }
 
 .pull-center > p {
   font-size: 11pt;
+  grid-area: right;
 }
 
 .pull-right {

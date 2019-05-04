@@ -1,6 +1,7 @@
 <div class="pagination-container">
-    {{#if prev}}
+    
         <div class="pull-left">
+    {{#if prev}}
             <a class=" btn" href="{{page_url prev}}">
                 <span class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512">
@@ -9,8 +10,8 @@
                 </span>
                 Newer Posts
             </a>
-        </div>
     {{/if}}
+</div>
 
     <div class="pull-center">
         <p>Page {{page}} of {{pages}}</p>
