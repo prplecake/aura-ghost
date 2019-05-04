@@ -14,6 +14,7 @@ tasks:
       gscan aura
   - dist: |
       cd aura
+      git rev-parse --abbrev-ref HEAD
       LATEST_TAG=$(git describe --tags --always --abbrev=0)
       FILENAME=latest
       if [ "$(git rev-parse origin/develop)" == "$(git rev-parse HEAD)" ]; then

@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Increased font-size of non-<pre>-wrapped <code>.
+- Added "Page X of Y" centered between pagination buttons
 
 ## [1.0.0] - 2019-05-04
 
