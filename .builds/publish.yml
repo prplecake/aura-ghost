@@ -3,10 +3,14 @@ packages:
   - npm
   - aws-cli
   - zip
-secrets:
-  - cd2e1b97-e567-47ee-95e9-b4a4894011b3
 sources:
   - https://git.sr.ht/~mjorgensen/aura
+secrets:
+  - cd2e1b97-e567-47ee-95e9-b4a4894011b3
+triggers:
+  - action: email
+    condition: always
+    to: Matthew Jorgensen <matthew@jrgnsn.net>
 tasks:
   - init: |
       sudo npm install -g gscan
