@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.2] - unreleased
+
+### Added
+
+- Feature Image on posts
 
 ## [1.0.1] - 2019-05-04
 
@@ -32,4 +37,5 @@ All notable changes to this project will be documented in this file.
 - build manifest
     - .builds/publish.yml
 
+[1.0.1]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.1
 [1.0.0]: https://git.sr.ht/~mjorgensen/aura/refs/1.0.0
