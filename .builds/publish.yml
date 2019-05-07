@@ -32,4 +32,4 @@ tasks:
       fi
       cd ../
       zip -r aura-$FILENAME.zip aura --exclude "*/.git*"
-      aws s3 cp aura-$FILENAME.zip s3://files.splat.soy/dist/aura/ --cache-control '"$CACHE_CONTROL"'
+      aws s3 cp aura-$FILENAME.zip s3://files.splat.soy/dist/aura/ --cache-control "$CACHE_CONTROL"
