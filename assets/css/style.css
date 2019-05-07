@@ -4,212 +4,213 @@
 This is a development CSS file which is built to a minified production
 stylesheet in asset/built/screen.css
 
- 1. Layout
- 2. Widgets
-   2.1. Hero Avatar
-   2.2. Author Bio
-   2.3. Navigation
-   2.4. External Links
-   2.5. Recent Posts
-   2.6. Tag cloud
- 3. Article
- 4. Pagination Buttons
- 5. Footer
- 6. @media Properties
- 7. Ghost Required Classes
+  1. Layout
+  2. Widgets
+  2.1. Hero Avatar
+  2.2. Author Bio
+  2.3. Navigation
+  2.4. External Links
+  2.5. Recent Posts
+  2.6. Tag cloud
+  3. Article
+  3.1. Article Meta
+  4. Pagination Buttons
+  5. Footer
+  6. @media Properties
+  7. Ghost Required Classes
 
 */
 
 /* 1. Layout - Basic Layout & Main Content
 /* ---------------------------------------------------------- */
 html, body {
-/*    overflow-x: hidden;
-*/    font-family: sans-serif;
-    font-size: 12pt;
+  /* overflow-x: hidden; */
+  font-family: sans-serif;
+  font-size: 12pt;
 }
 
 body {
-    background: #fff;
-    padding-bottom: 2rem;
-    max-width: 100%;
+  background: #fff;
+  padding-bottom: 2rem;
+  max-width: 100%;
 }
 
 article p {
-    line-height: 1.25;
-    font-size: 12pt;
+  line-height: 1.25;
+  font-size: 12pt;
 }
 
 pre {
-    border: 1px #ddd solid;
-    border-radius: 0;
-    overflow-x: auto;
-    background: transparent;
-    line-height: 1.2;
-    margin: 0 auto;
-    padding: 1rem;
-    background: #efefef;
-    display: grid;
+  border: 1px #ddd solid;
+  border-radius: 0;
+  overflow-x: auto;
+  background: transparent;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding: 1rem;
+  background: #efefef;
+  display: grid;
 }
 
 pre code {
-    white-space: pre;
-    word-wrap: normal;
-    font-size: 10pt;
-    display: inline-block;
-    overflow-x: scroll;
+  white-space: pre;
+  word-wrap: normal;
+  font-size: 10pt;
+  display: inline-block;
+  overflow-x: scroll;
 }
 
 code {
-    font-family: monospace;
-    color: #000;
+  font-family: monospace;
+  color: #000;
 }
 
 blockquote {
 
 }
 blockquote p {
-    font-size: 11pt !important;
+  font-size: 11pt !important;
 }
 
 a {
-    color: blue;
-    text-decoration: underline;
+  color: blue;
+  text-decoration: underline;
 }
 
 .container {
-   max-width: 960px;
-   margin: 0 auto;
-   display: grid;
-   grid-template-columns: 2fr 1fr;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .container .content {
-   grid-column-start: 1;
+  grid-column-start: 1;
 }
 
 .post-class .post-title,
 .container .site-title {
-   grid-column-start: 1;
-   grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .container .site-title a {
-   color: black;
-   text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .post-content {
-   margin: 6px 0;
+  margin: 6px 0;
 }
 
 .post-stub .post-tags {
-    font-size: 10pt;
+  font-size: 10pt;
 }
 
 /* 2. Widgets
 /* ---------------------------------------------------------- */
 .container .sidebar {
-   grid-column-start: 2;
-   padding-left: 1rem;
+  grid-column-start: 2;
+  padding-left: 1rem;
 }
 
 .sidebar,
 .sidebar a {
-    color: #444;
+  color: #444;
 }
 
 .sidebar hr {
-    border-top: #aaa;
-    width: 75%;
+  border-top: #aaa;
+  width: 75%;
 }
 
 /* 2.1. Hero Avatar
 /* ---------------------------------------------------------- */
 .hero-avatar {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
 
 img.avatar {
-    border-radius: 10%;
+  border-radius: 10%;
 }
 
 /* 2.2. Author Bio
 /* ---------------------------------------------------------- */
 .hero-greeting,
 .hero-bio {
-    font-size: 12pt;
+  font-size: 12pt;
 }
 
 /* 2.3. Navigation
 /* ---------------------------------------------------------- */
 .navigation {
-    text-align: center;
-    position: relative;
-    margin: 1em;
-    overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin: 1em;
+  overflow: hidden;
 }
 
 .navigation ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: -1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -1px;
 }
 
 .navigation li {
-    flex-grow: 1;
-    flex-basis: auto;
-    margin: .25em 0;
-    padding: 0 1em;
-    text-align: center;
-    border-left: 1px solid #ccc;
-    background-color: #fff;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 1em;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  background-color: #fff;
 }
 
 .nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .sidebar .navigation a {
-    color: blue;
+  color: blue;
 }
 
 li[role=menuitem] {
-    display: inline;
+  display: inline;
 }
 
 /* 2.4. External Links
 /* ---------------------------------------------------------- */
 .external-links .context {
-    position: absolute;
-    top: -0.9rem;
-    left: 0;
-    font-size: 0.8rem;
-    color: black;
+  position: absolute;
+  top: -0.9rem;
+  left: 0;
+  font-size: 0.8rem;
+  color: black;
 }
 
 .external-links > p {
-    position: relative;
+  position: relative;
 }
 
 .external-links > p:not(:last-child) {
-    padding-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* 2.5. Recent Posts
 /* ---------------------------------------------------------- */
 .recent-posts {
-    font-size: 11pt;
-    padding-bottom: 1rem;
+  font-size: 11pt;
+  padding-bottom: 1rem;
 }
 
 .recent-post-item {
-    margin: .5rem 0;
+  margin: .5rem 0;
 }
 
 .recent-post-date {
@@ -222,90 +223,107 @@ li[role=menuitem] {
 /* 2.6. Tag cloud
 /* ---------------------------------------------------------- */
 .tagcloud {
-    text-align: center;
-    position: relative;
-    margin: 0 1em;
-    overflow: hidden;
-    font-size: 11pt;
+  text-align: center;
+  position: relative;
+  margin: 0 1em;
+  overflow: hidden;
+  font-size: 11pt;
 }
 
 .tagcloud ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 0 0 -1px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 0 -1px;
 }
 
 .tagcloud li {
-    flex-grow: 1;
-    flex-basis: auto;
-    margin: .25em 0;
-    padding: 0 .5em;
-    text-align: center;
-    border-left: 1px solid #ccc;
-    background-color: #fff;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: .25em 0;
+  padding: 0 .5em;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  background-color: #fff;
 }
 
 .tagcloud-list {
-    padding: 0;
+  padding: 0;
 }
 
 li.tagcloud-list-item {
-    display: inline;
+  display: inline;
 }
 
 .tagcloud h3 {
-    text-align: left;
+  text-align: left;
 }
 
 /* 3. Article
 /* ---------------------------------------------------------- */
+
+.post-footer .post-tags {
+  font-size: 10pt;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  padding-top: 0px;
+  font-size: 16pt;
+}
+
+.post-stub h2 {
+  font-size: 12pt;
+}
+
+.post-stub .date {
+  color: #999;
+  display: inline-block;
+  min-width: 6rem;
+}
+
+@media (min-width: 576px) {
+  .visible-xs {
+  display: none;
+  }
+}
+
+.post-content p {
+  line-height: 1.25;
+  font-size: 12pt;
+}
+
+/* 5.1. Article Meta
+/* ---------------------------------------------------------- */
+
+.post-meta-container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .post-meta {
-    color: #999;
+  color: #999;
 }
 
 .post-meta .date {
 }
 
-.post-footer .post-tags {
-    font-size: 10pt;
-}
-
 .post-meta a {
-    color: #999;
+  color: #999;
 }
 
-img {
-    max-width: 100%;
-    margin: 0 auto;
-    display: block;
+.post-feature-image-container {
+
 }
 
-h1 {
-   padding-top: 0px;
-   font-size: 16pt;
-}
+.post-feature-image {
 
-.post-stub h2 {
-    font-size: 12pt;
-}
-
-.post-stub .date {
-    color: #999;
-    display: inline-block;
-    min-width: 6rem;
-}
-
-@media (min-width: 576px) {
-  .visible-xs {
-    display: none;
-  }
-}
-
-.post-content p {
-    line-height: 1.25;
-    font-size: 12pt;
 }
 
 /* 4. Pagination Buttons
@@ -314,7 +332,7 @@ h1 {
 .pagination-container {
   display: grid;
   grid-template-areas:
-    'left center right';
+  'left center right';
   grid-template-columns: 1.5fr 1fr 1.5fr;
   grid-gap: 10px;
   padding: 10px;
@@ -352,55 +370,55 @@ h1 {
   text-decoration: none;
   margin: 12px 0 0 0;
   transition: color .15s ease-in-out,
-    background-color .15s ease-in-out,
-    border-color .15s ease-in-out,
-    box-shadow .15s ease-in-out;
+  background-color .15s ease-in-out,
+  border-color .15s ease-in-out,
+  box-shadow .15s ease-in-out;
 }
 .btn:hover {
-    text-decoration: none;
-    background: #f8f9fa;
-    color: #000;
-  }
+  text-decoration: none;
+  background: #f8f9fa;
+  color: #000;
+}
 
 .icon {
-    display: inline-block;
-    line-height: 0.75em;
-    width: 0.4em;
-    vertical-align: -0.2em;
+  display: inline-block;
+  line-height: 0.75em;
+  width: 0.4em;
+  vertical-align: -0.2em;
 }
 
 .icon path {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 /* 5. Footer
 /* ---------------------------------------------------------- */
 .site-footer {
-    font-size: 10pt;
-    padding-top: 0.5rem;
+  font-size: 10pt;
+  padding-top: 0.5rem;
 }
 
 /* 6. @media Properties
 /* ---------------------------------------------------------- */
 @media (max-width: 768px) {
-    .container {
-        display:block
-    }
-    .container .sidebar {
-        padding: 3rem 0 0 0;
-    }
-    .site-footer {
-        text-align: center;
-    }
-    .btn {
-      font-size: 0.8rem;
-    }
+  .container {
+    display:block
+  }
+  .container .sidebar {
+    padding: 3rem 0 0 0;
+  }
+  .site-footer {
+    text-align: center;
+  }
+  .btn {
+   font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 576px) {
- .visible-xs {
+  .visible-xs {
   display:none
- }
+  }
 }
 
 /* 7. Ghost Required Classes

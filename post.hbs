@@ -1,31 +1,29 @@
 {{!< default}}
 
 {{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
+the {body} of the default.hbs template, which contains our header/footer. }}
 
 
-        {{! Everything inside the #post tags pulls data from the post }}
-        {{#post}}
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
 
-        {{! Everything below outputs the content of the post which has been publushed. }}
-        <h1 class="site-title">{{title}}</h1>
+{{! Everything below outputs the content of the post which has been publushed. }}
+<h1 class="site-title">{{title}}</h1>
+
+{{> "post-meta"}}
+
 <div class="content">
-            <div class="post-meta">
-                Published <time class="date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="YYYY-MM-DD"}}</time> on <a href="{{@site.url}}">{{@site.title}}</a>
-                —
-                <a href="{{url}}">Permalink</a>
-            </div>
 
-        <section class="post-content">
-            {{content}}
-        </section>
+  <section class="post-content">
+    {{content}}
+  </section>
 
-        <footer class="post-footer">
-            <span class="post-tags">
-                {{#if tags}}
-                    {{tags separator=" | "}}
-                {{/if}}
-            </span>
-        </footer>
+  <footer class="post-footer">
+    <span class="post-tags">
+      {{#if tags}}
+        {{tags separator=" | "}}
+      {{/if}}
+    </span>
+  </footer>
 </div>
-        {{/post}}
+{{/post}}

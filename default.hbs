@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {{! Document Settings}}
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{! Document Settings}}
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    {{! Page Meta}}
-    <title>{{meta_title}}</title>
-    <meta name="description" content="True" />
+  {{! Page Meta}}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="True" />
 
-    {{! Styles'n'Scripts}}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+  {{! Styles'n'Scripts}}
+  <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
 
-    {{! Ghost outputs important style and meta data with this tag: }}
-    {{ghost_head}}
+  {{! Ghost outputs important style and meta data with this tag: }}
+  {{ghost_head}}
 </head>
 
 <body class="{{body_class}}">
-    <div class="container">
-        {{^is "post, page"}}
-            <h1 class="site-title">{{@site.title}}</h1>
-        {{/is}}
+  <div class="container">
+    {{^is "post, page"}}
+      <h1 class="site-title">{{@site.title}}</h1>
+    {{/is}}
 
-        {{! Main content ginserted at this tag: }}
-        {{{body}}}
-    
-        <div class="sidebar">
+    {{! Main content ginserted at this tag: }}
+    {{{body}}}
+  
+    <div class="sidebar">
 
-            {{> "widget-author-bio"}}
+      {{> "widget-author-bio"}}
 
-            <div class="navigation">
-                {{navigation}}
-            </div>
+      <div class="navigation">
+        {{navigation}}
+      </div>
 
-            {{! Edit the following widgets in their respective .hbs file in partials/
-                More information can be found at 
-                <https://man.sr.ht:~mjorgensen/aura/widgets.md>
-                Comment out the following line to disable widget-external links. }}
-            {{> "widget-external-links"}}
+      {{! Edit the following widgets in their respective .hbs file in partials/
+        More information can be found at 
+        <https://man.sr.ht:~mjorgensen/aura/widgets.md>
+        Comment out the following line to disable widget-external links. }}
+      {{> "widget-external-links"}}
 
-            {{> "widget-recent-posts"}}
+      {{> "widget-recent-posts"}}
 
-            {{> "widget-tagcloud"}}
+      {{> "widget-tagcloud"}}
 
-            <hr />
+      <hr />
 
-            <footer class="site-footer">
-                <div class="inner">
-                        The content for this site is <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>. The <a href="https://git.sr.ht/~mjorgensen/aura">aura theme</a> for this site is <a href="https://git.sr.ht/~mjorgensen/ghst/tree/master/LICENSE">MIT</a>.
-                        Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a>.
-                </div>  
-            </footer>   
+      <footer class="site-footer">
+        <div class="inner">
+            The content for this site is <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>. The <a href="https://git.sr.ht/~mjorgensen/aura">aura theme</a> for this site is <a href="https://git.sr.ht/~mjorgensen/ghst/tree/master/LICENSE">MIT</a>.
+            Proudly published with <a class="icon-ghost" href="https://ghost.org">Ghost</a>.
         </div>  
-    
-        {{! Ghost output important scripts and data with this tag: }}
-        {{ghost_foot}}
-    </div>
+      </footer>   
+    </div>  
+  
+    {{! Ghost output important scripts and data with this tag: }}
+    {{ghost_foot}}
+  </div>
 </body>
 </html>
