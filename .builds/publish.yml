@@ -9,7 +9,7 @@ secrets:
   - cd2e1b97-e567-47ee-95e9-b4a4894011b3
 triggers:
   - action: email
-    condition: fail
+    condition: failure
     to: Matthew Jorgensen <matthew@jrgnsn.net>
 tasks:
   - init: |
