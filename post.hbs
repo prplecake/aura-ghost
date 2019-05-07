@@ -8,18 +8,18 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 {{#post}}
 
 {{! Everything below outputs the content of the post which has been publushed. }}
-<h1 class="site-title">{{title}}</h1>
+<h1 class="site-title {{slug}}">{{title}}</h1>
 
 {{> "post-meta"}}
 
-<div class="content">
+<div class="content {{slug}}">
 
-  <section class="post-content">
+  <section class="post-content {{slug}}">
     {{content}}
   </section>
 
-  <footer class="post-footer">
-    <span class="post-tags">
+  <footer class="post-footer {{slug}}">
+    <span class="post-tags {{slug}}">
       {{#if tags}}
         {{tags separator=" | "}}
       {{/if}}
