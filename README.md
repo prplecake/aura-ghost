@@ -1,17 +1,11 @@
 # aura
 
+This project is no longer actively developed.
+
 [![builds.sr.ht status](https://builds.sr.ht/~mjorgensen/aura.svg)](https://builds.sr.ht/~mjorgensen/aura?)
 
 A very minimal theme for the [Ghost][ghost] publishing platform. Major
 inspiration comes from Drew DeVault's [blog][ddevault-blog].
-
-**Resources:**
-
-* [Source Code][git]
-* [Issue Tracker][todo]
-* Mailing Lists
-    * [aura-announce][announce-list] - Subscribe for future updates,
-    including releases.
 
 ## Features
 
@@ -28,9 +22,6 @@ blog][ddevault-blog]. His [site code][ddevault-code] is [MIT][mit-license].
 
 
 [ghost]: https://ghost.org
-[git]: https://git.sr.ht/~mjorgensen/aura
-[todo]: https://todo.sr.ht/~mjorgensen/aura
-[announce-list]: https://lists.sr.ht/~mjorgensen/aura-announce
 [ddevault-blog]: https://drewdevault.com
 [ddevault-code]: https://git.sr.ht/~sircmpwn/drewdevault.com
 [mit-license]: https://opensource.org/licenses/MIT
